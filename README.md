@@ -19,3 +19,13 @@ Here's the mockup to base the design on (also under mockup_example.png).
 
 
 Once you're done with the challenge, email me back the link to your repository or fork.
+
+
+JT Notes -
+
+How to serve up:
+	npm install
+	npm start
+
+	in another tab:
+	node server.js
