@@ -37,10 +37,18 @@
   margin: 15px 0px 0px 0px;
 }
 /* line 31, ../../compass/sass/styles.sass */
+.userSearch .searchBar .input-group {
+  border-radius: 0;
+}
+/* line 33, ../../compass/sass/styles.sass */
+.userSearch .searchBar .input-group .form-control {
+  border-radius: 0;
+}
+/* line 35, ../../compass/sass/styles.sass */
 .userSearch .searchBar input {
   width: 80%;
 }
-/* line 33, ../../compass/sass/styles.sass */
+/* line 38, ../../compass/sass/styles.sass */
 .userSearch .searchBar .btn {
   width: 20%;
 }
