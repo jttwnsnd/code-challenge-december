@@ -45,7 +45,7 @@ myApp.controller('mainController', function($scope, $http, $route, $location){
 			//call was not Ron
 			console.log($scope.search)
 			// $scope.results = $scope.search
-			requestJSON(apiPath + $scope.search + pagination, function(json){
+			requestJSON(apiPath + $scope.search, function(json){
 				if(json.message == "Not Found"){
 					$scope.results = "No User Info Found"
 				}else{
