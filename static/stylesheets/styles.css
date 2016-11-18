@@ -20,29 +20,19 @@
 
 /* line 19, ../../compass/sass/styles.sass */
 .hawtness {
-  height: 500px;
+  height: 300px;
   font-size: 80px;
 }
 /* line 22, ../../compass/sass/styles.sass */
-.hawtness .title1 {
-  color: #fff;
-  font-size: 60px;
+.hawtness img {
+  transform: translateY(100px) translateX(30px);
 }
 
 /* line 26, ../../compass/sass/styles.sass */
-.title {
-  transform: translateY(100px);
-}
-/* line 28, ../../compass/sass/styles.sass */
-.title .title2 {
-  transform: translateX(30px);
-}
-
-/* line 32, ../../compass/sass/styles.sass */
 .userSearch {
-  height: 500px;
+  height: 300px;
 }
-/* line 35, ../../compass/sass/styles.sass */
+/* line 29, ../../compass/sass/styles.sass */
 .userSearch .searchBar label {
   margin: 15px 0px 0px 15px;
 }
