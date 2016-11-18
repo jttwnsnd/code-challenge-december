@@ -34,5 +34,13 @@
 }
 /* line 29, ../../compass/sass/styles.sass */
 .userSearch .searchBar label {
-  margin: 15px 0px 0px 15px;
+  margin: 15px 0px 0px 0px;
+}
+/* line 31, ../../compass/sass/styles.sass */
+.userSearch .searchBar input {
+  width: 80%;
+}
+/* line 33, ../../compass/sass/styles.sass */
+.userSearch .searchBar .btn {
+  width: 20%;
 }
