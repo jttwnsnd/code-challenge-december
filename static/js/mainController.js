@@ -65,7 +65,7 @@ myApp.controller('mainController', function($scope, $http, $route, $location){
 					//this is the droid we are looking for, assign the pieces
 					for(var i = 0; i < 10; i++){
 						results.push({
-							result_num: i,
+							result_num: i + 1,
 							username: json.items[i].login,
 							avatar: json.items[i].avatar_url,
 							bio: json.items[i].bio,
