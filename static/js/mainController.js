@@ -12,8 +12,6 @@ myApp.controller('mainController', function($scope, $http, $route, $location){
 	// Search Function Logic
 	//========================
 
-	var results = [];
-
 	$scope.searchResults = function() {
 		var isRon = $scope.search.search(/(ron)/g)
 		if (isRon !== -1){
@@ -23,6 +21,7 @@ myApp.controller('mainController', function($scope, $http, $route, $location){
 				console.log('probably not Ron')
 				$scope.results = $scope.search
 				requestJSON(apiPath + $scope.search, function(json){
+					var results = [];
 					if(json.message == "Not Found"){
 						$scope.results = "No User Info Found"
 					}else{
@@ -39,6 +38,7 @@ myApp.controller('mainController', function($scope, $http, $route, $location){
 						}
 						console.log('found something')
 						console.log(json)
+						$scope.users = results;
 						// $scope.avatar = json.avatar_url;
 						// $scope.bio = json.bio;
 						// $scope.location = json.location;
@@ -46,7 +46,7 @@ myApp.controller('mainController', function($scope, $http, $route, $location){
 					}
 					console.log('finished')
 					//route them to our view
-					$location.path('/search')
+					routeChange();
 				});
 			}else{
 				//got him, let's rick roll!
@@ -58,6 +58,7 @@ myApp.controller('mainController', function($scope, $http, $route, $location){
 			console.log($scope.search)
 			// $scope.results = $scope.search
 			requestJSON(apiPath + $scope.search, function(json){
+				var results = [];
 				if(json.message == "Not Found"){
 					$scope.results = "No User Info Found"
 				}else{
@@ -74,13 +75,19 @@ myApp.controller('mainController', function($scope, $http, $route, $location){
 					}
 					console.log('found something')
 					console.log(json)
+					$scope.users = results;
+					console.log(results);
 				}
 				console.log('finished')
 				//route them to our view
-				$location.path('/search')
+				routeChange();
 			});
 		}
 	}
+
+	//=========================
+	// Functions
+	//=========================
 
 	//get the info from github
 	function requestJSON(url, callback) {
@@ -90,6 +97,11 @@ myApp.controller('mainController', function($scope, $http, $route, $location){
 				callback.call(null, xhr.responseJSON);
 			}
 		})
+	}
+
+	//force my route change
+	function routeChange() {
+		$location.path('/search');
 	}
 
 
