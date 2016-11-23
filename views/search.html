@@ -1,12 +1,12 @@
 <div class="col-xs-12">
 	{{results}}
-	<div class="col-xs-7 results-wrapper" ng-repeat="user in users">
+	<div class="col-xs-7 results-wrapper" ng-repeat="user in users track by $index">
 		<div class="row">
 			<div class="col-xs-12">
-				<h4>{{user.result_num}} {{user.username}}</h4>
+				<h4>{{$index + 1}} {{user.login}}</h4>
 			</div>
 			<div class="col-xs-3">
-				<img ng-src={{user.avatar}}>
+				<img ng-src={{user.avatar_url}}>
 			</div>
 			<div class="col-xs-9">
 				<div class="row">

@@ -25,40 +25,41 @@
 }
 /* line 22, ../../compass/sass/styles.sass */
 .hawtness img {
-  transform: translateY(100px) translateX(30px);
+  margin: 25% 1%;
+  max-width: 100%;
 }
 
-/* line 24, ../../compass/sass/styles.sass */
+/* line 25, ../../compass/sass/styles.sass */
 .greeting {
   transform: translateY(200px);
 }
 
-/* line 28, ../../compass/sass/styles.sass */
+/* line 29, ../../compass/sass/styles.sass */
 .userSearch {
   height: 300px;
 }
-/* line 31, ../../compass/sass/styles.sass */
+/* line 32, ../../compass/sass/styles.sass */
 .userSearch .searchBar label {
   margin: 15px 0px 0px 0px;
 }
-/* line 33, ../../compass/sass/styles.sass */
+/* line 34, ../../compass/sass/styles.sass */
 .userSearch .searchBar .input-group {
   border-radius: 0;
 }
-/* line 35, ../../compass/sass/styles.sass */
+/* line 36, ../../compass/sass/styles.sass */
 .userSearch .searchBar .input-group .form-control {
   border-radius: 0;
 }
-/* line 37, ../../compass/sass/styles.sass */
+/* line 38, ../../compass/sass/styles.sass */
 .userSearch .searchBar input {
   width: 80%;
 }
-/* line 40, ../../compass/sass/styles.sass */
+/* line 41, ../../compass/sass/styles.sass */
 .userSearch .searchBar .btn {
   width: 20%;
 }
 
-/* line 44, ../../compass/sass/styles.sass */
+/* line 45, ../../compass/sass/styles.sass */
 .results-wrapper img {
   width: 80px;
   height: 80px;
